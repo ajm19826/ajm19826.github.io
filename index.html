@@ -1,74 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me (AJM)</title>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4118288704086018"
-     crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background: #ddd;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>About Me</h1>
-        <p>Hello! I'm a developer passionate about building software and games.</p>
-        
-        <h2>Projects</h2>
-        <ul>
-            <li>Small Operating System Development</li>
-            <li>SimCity 2000-style Game (C# WinForms)</li>
-            <li>Mario-style Platformer (C# WinForms)</li>
-            <li>First-Person Shooter (C# OpenTK 3.3)</li>
-            <li>Paint Application (C# WinForms)</li>
-            <b><li>NATO-OS 7(C# VB.NET OpenTK 3.3 WinForms)</li></b>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJM • Developer & Creator</title>
 
-        </ul>
-        
-        <h2>Skills</h2>
-        <ul>
-            <li>C#, WinForms, OpenTK</li>
-            <li>Game Development</li>
-            <li>Operating System Development</li>
-            <li>Graphics Programming</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Web Development</li>
-        </ul>
-        
-        <h2>Contact</h2>
-        <p>Email: cajm23331@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/ajm19826" target="_blank">github.com/ajm19826</a></p>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --primary: #0057ff;
+        --background: #f9f9fb;
+        --text: #1a1a1a;
+        --card: #ffffff;
+        --gray: #777777;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: var(--background);
+        color: var(--text);
+        padding: 20px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .header h1 {
+        font-size: 2.4rem;
+        color: var(--primary);
+    }
+    .header p {
+        font-size: 1.15rem;
+        color: var(--gray);
+    }
+
+    .container {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .section {
+        background: var(--card);
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+        color: var(--primary);
+        margin-bottom: 12px;
+    }
+
+    .card-list {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    .card {
+        background: var(--background);
+        border-radius: 10px;
+        padding: 16px;
+        transition: transform 0.2s ease;
+    }
+    .card:hover {
+        transform: translateY(-4px);
+    }
+    .card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+    .card p {
+        color: var(--gray);
+        font-size: 0.95rem;
+    }
+    .contact a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Hello, I'm AJM</h1>
+        <p>Developer & Creator — passionate about software, games, and building cool tech.</p>
     </div>
+
+    <!-- Projects -->
+    <div class="section">
+        <h2>Featured Projects</h2>
+        <div class="card-list">
+            <div class="card">
+                <h3>NATO-OS07</h3>
+                <p>A custom OS with UI, apps, chat, games, and a 3D desktop toggle. Built with C# and OpenTK.</p>
+            </div>
+            <div class="card">
+                <h3>Blueberry OS</h3>
+                <p>A tiny OS suitable for a micro-bit.</p>
+            </div>
+            <div class="card">
+                <h3>HouseLearning</h3>
+                <p>A human-first learning platform focused on bite-sized lessons and intuitive interfaces.</p>
+            </div>
+            <div class="card">
+                <h3>MoneyMate</h3>
+                <p>A personal finance control center built in JavaScript.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <h2>Skills & Tools</h2>
+  <img src="https://img.shields.io/badge/C%23-7D3C98?style=for-the-badge&logo=csharp&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-2980B9?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F1C40F?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Git-C0392B?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
+  <img src="https://img.shields.io/badge/Visual-Basic-3670A0?style=for-the-badge&logo=&logoColor=ffdd54"/>
+    </div>
+
+    <!-- Contact -->
+    <div class="section contact">
+        <h2>Contact & Links</h2>
+        <p>Email: <a href="mailto:cajm23331@gmail.com">cajm23331@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/ajm19826" target="_blank">github.com/ajm19826</a></p>
+        <p>Website: <a href="https://ajm19826.github.io" target="_blank">ajm19826.github.io</a></p>
+    </div>
+
+</div>
+
 </body>
 </html>
